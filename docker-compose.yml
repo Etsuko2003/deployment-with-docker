@@ -1,0 +1,13 @@
+services:
+  predictive-maintenance:
+    build:
+      context: ./codes/app
+      dockerfile: Dockerfile
+    container_name: predictive-maintenance-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./codes/app:/app
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+    restart: unless-stopped
