@@ -16,7 +16,7 @@ Run the container (mounting the artifacts directory):
 docker run -v ./artifacts:/app/artifacts train-image:latest
 ```
 
-This step trains the model and generates the required artifacts.
+This step trains the model and generates the required artifacts. Be sure the Docker Engine already started.
 
 ---
 
